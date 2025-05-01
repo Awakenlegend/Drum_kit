@@ -53,6 +53,8 @@ h1 {
     align-items: center;
     gap: 0.5rem;
     border: 2px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
 }
 
 .drum-pad:hover {
@@ -67,10 +69,28 @@ h1 {
     border-color: #ffc600;
 }
 
+.drum-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    filter: drop-shadow(0 0 5px rgba(255, 198, 0, 0.5));
+    transition: transform 0.1s ease;
+    display: block;
+}
+
+.drum-pad.playing .drum-image {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(255, 198, 0, 0.8));
+}
+
 .key {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ffc600;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
 }
 
 .sound {
@@ -91,5 +111,10 @@ h1 {
     
     .instructions {
         font-size: 1rem;
+    }
+    
+    .drum-image {
+        width: 60px;
+        height: 60px;
     }
 } 

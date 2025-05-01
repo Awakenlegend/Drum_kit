@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <rect x="20" y="30" width="60" height="40" rx="5" fill="#ffc600" stroke="#ffc600" stroke-width="2"/>
-    <rect x="25" y="35" width="50" height="30" rx="3" fill="none" stroke="#000" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <style>
+        .kick-body { fill: #ffc600; stroke: #ffc600; stroke-width: 2; }
+        .kick-inner { fill: none; stroke: #000; stroke-width: 1; }
+    </style>
+    <rect class="kick-body" x="20" y="30" width="60" height="40" rx="5"/>
+    <rect class="kick-inner" x="25" y="35" width="50" height="30" rx="3"/>
 </svg> 
